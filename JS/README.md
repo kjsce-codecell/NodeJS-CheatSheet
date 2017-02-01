@@ -118,7 +118,7 @@ How to increment i after loop, adds 1 to i : `i++`
  Will run at least once and continues to run until condition is false
 
 
-##Bbjects
+##Objects
 
 <pre>var objectName = {
   property1: "can be text",

@@ -52,9 +52,8 @@ _Example:_
 ```
 $ npm update express
 ```
-<<<<<<< HEAD
 
-##Creating you own NPM module
+##Creating your own NPM module
 ###Creating an account in the NPM registry
 1. Go to [NPM Registry](https://npmjs.com) and create an account
 2. Remember the username and password
@@ -69,7 +68,39 @@ $ npm update express
 7. Done! You've initialized your first node module!
 
 ###Writing your module
+1. We will be writing a module which prints the current date and time.
+2. After initializing your module, if not done already, navigate to the module's directory.
+3. Create a file named index.js.
+4. We are now telling the module what to do when started. Edit the scripts section in package.json to look like so:
+```
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "node index.js"
+  },
+```
+5. Open and edit the index.js file to look like so:
+```javascript
+var date = new Date();	//Create new instance of Date object
+console.log (date.getDate()  + "/" + // get Today's Date
+			(date.getMonth() + 1) + "/" +	//get Today's Month and add 1 to it 
+											//Done so, because Month is zero indexed
+			(date.getYear - 100));
+```
+
+###Running the module
+1. Navigate to the directory of your module
+2. Type into the node REPL: `$ npm start`
 
 ###Publish your module
-=======
->>>>>>> b06f47f27a1735e6349b62cfefe038b551f3e900
+1. Change the version number to desired number in package.json. **Do not change anything else**.
+2. Make sure you have an account on [NPM Registry](https://npmjs.com).
+3. Type into the REPL:
+```
+$ npm login
+```
+4. Enter your credentials as required.
+5. Type into the REPL:
+```
+$ npm publish
+```
+6. Hopefully, your module will get published successfully.

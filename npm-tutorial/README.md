@@ -52,6 +52,7 @@ _Example:_
 ```
 $ npm update express
 ```
+<<<<<<< HEAD
 
 ##Creating you own NPM module
 ###Creating an account in the NPM registry
@@ -70,3 +71,5 @@ $ npm update express
 ###Writing your module
 
 ###Publish your module
+=======
+>>>>>>> b06f47f27a1735e6349b62cfefe038b551f3e900

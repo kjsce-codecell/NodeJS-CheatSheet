@@ -52,3 +52,21 @@ _Example:_
 ```
 $ npm update express
 ```
+
+##Creating you own NPM module
+###Creating an account in the NPM registry
+1. Go to [NPM Registry](https://npmjs.com) and create an account
+2. Remember the username and password
+
+###Initializing your module
+1. Create a directory with the name of the module you intend to create; for e.g. vatsal-module-1.
+2. Navigate to the folder you've made.
+3. Start the node/ npm REPL in the folder.
+4. Type in `$ npm init`
+5. The project will ask for various details like module name, version, etc.
+6. Unless you want to change anything, keep the values default as mention between the parentheses.
+7. Done! You've initialized your first node module!
+
+###Writing your module
+
+###Publish your module

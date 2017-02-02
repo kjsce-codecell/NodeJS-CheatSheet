@@ -23,7 +23,7 @@ var retweet = function() {
 
     Twitter.get('search/tweets', params, function(err, data) {
       // if there no errors
-        if (!err) {
+        if (!err && data && data.statuses[0]) {
           // grab ID of tweet to retweet
             var retweetId = data.statuses[0].id_str;
             // Tell TWITTER to retweet
@@ -120,7 +120,7 @@ var retweet = function() {
     }
     Twitter.get('search/tweets', params, function(err, data) {
       // if there no errors
-        if (!err) {
+        if (!err && data && data.statuses[0]) {
           // grab ID of tweet to retweet
             var retweetId = data.statuses[0].id_str;
             // Tell TWITTER to retweet

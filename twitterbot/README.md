@@ -1,5 +1,5 @@
-#Reference for using `twit`
-##Dependencies
+# Reference for using `twit`
+## Dependencies
 <pre>
 // Dependencies =========================
 var
@@ -8,7 +8,7 @@ var
 
 var Twitter = new twit(config);</pre>
 
-##For Retweet 
+## For Retweet 
 <pre>
 // RETWEET BOT ==========================
 
@@ -46,14 +46,14 @@ var retweet = function() {
     });
 }</pre>
 
-###Using Retweet 
+### Using Retweet 
 <pre>
 // grab & retweet as soon as program is running...
 retweet();
 // retweet in every 50 minutes
 setInterval(retweet, 3000000);</pre>
 
-##For Favorite
+## For Favorite
 <pre>
 // FAVORITE BOT====================
 
@@ -99,7 +99,7 @@ function ranDom (arr) {
   return arr[index];
 };</pre>
 
-##Complete Retweet + Favourite 
+## Complete Retweet + Favourite 
 <pre>
 
 // Dependencies =========================
@@ -190,7 +190,7 @@ function ranDom (arr) {
   return arr[index];
 };</pre>
 
-##Configuration for twitter 
+## Configuration for twitter 
 <pre>
 /** TWITTER APP CONFIGURATION
 
@@ -201,7 +201,7 @@ module.exports = {
   access_token_secret: ''
 }</pre>
 
-##Scripts
+## Scripts
 <pre>
 {
   "scripts": {    
